@@ -1,10 +1,8 @@
-import React from "react";
 import { imgUrlFull, imgUrl } from "../../static";
 
-const UpcomingItem = ({ current, next, nextIndex, slideView, fade, nextSlide }) => {
+const UpcomingItem = ({ current, next, nextIndex, fade, nextSlide }) => {
   const { backdrop_path, title, overview } = current;
   return (
-    // <div className={`upcoming__item ${slideView == index ? 'upcoming__item_entered': ''}`}>
     <div className={`upcoming__item upcoming__item_${fade}`}>
       <img src={imgUrlFull + backdrop_path} alt="" className="upcoming__bg"/>
       <div className="upcoming__content">

@@ -1,5 +1,4 @@
-import React from "react";
-import Upcoming from "../components/upcoming/upcoming";
+import Upcoming from "../components/upcoming";
 import Content from "../components/content";
 
 const HomePage = () => {

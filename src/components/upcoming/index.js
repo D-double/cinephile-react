@@ -1,2 +1,2 @@
-import Upcoming from "./upcoming";
+import Upcoming from "./upcoming-container";
 export default Upcoming;

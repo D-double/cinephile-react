@@ -8,12 +8,10 @@ export default class UpcomingService {
         throw new Error("Данные не найдены");
       }
       const data = await result.json();
-      const arrayWithPhoto = data.results.filter(movie => movie.backdrop_path != null)
-      return arrayWithPhoto
+      const array = data.results.filter(movie => movie.backdrop_path != null)
+      return array
     } catch (error) {
-      return new Promise((resolve, reject) => {
-        reject(error)
-      })
+      throw error;
     }
   }
   

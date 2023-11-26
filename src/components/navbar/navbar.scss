@@ -45,6 +45,7 @@
       transform: scaleY(0);
       transform-origin: 0 0;
       transition: 0.5s;
+      
       &.active {
         transform: scaleY(1);
       }
