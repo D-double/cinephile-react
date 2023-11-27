@@ -11,7 +11,6 @@ const Navbar = ()=>{
   { title: "Сериалы", url: "tv" },
  ]
  const [burger, setBurger] = useState(false);
- console.log(burger);
  return ( 
   <header className="header">
     <nav className="header__nav container">
